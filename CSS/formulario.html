@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+
+        /* Reset das tags */
+        *{
+            margin: 0px;
+            padding: 0px;
+            font: 14px sans-serif;
+            outline: none;
+        }
+
+        /* Formulário */
+        form{
+            width: 600px;
+            background-color: #e8e8e8;
+            margin: 30px auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"]
+        {
+            width: 578px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        fieldset{
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        legend{
+            font-size: 12px;
+        }
+
+        input[type="checkbox"]{
+            margin-right: 5px;
+        }
+
+        label{
+            margin-right: 15px;
+        }
+
+        select{
+            width: 600px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        textarea{
+            width: 578px;
+            height: 120px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+
+        input[type="submit"],
+        input[type="reset"]{
+            padding: 10px 40px;
+            border: 1px solid #5D9B23;
+            background: linear-gradient(to bottom, #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%);
+        }
+
+        input[type="submit"],
+        input[type="reset"]:hover{
+            cursor: pointer;
+        }
+
+        /* Ao selecionar o campo */
+        input:focus,
+        select:focus,
+        textarea:focus{
+            box-shadow: 0px 0px 5px #000 inset;
+            transition: box-shadow 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Informe seu nome">
+        
+        <input type="email" placeholder="Informe seu e-mail">
+        
+        <fieldset>
+            <legend>Turno que deseja estudar</legend>
+            
+            <label><input type="checkbox">Matutino</label>
+            
+            <label><input type="checkbox">Vespertino</label>
+            
+            <label><input type="checkbox">Noturno</label>
+        </fieldset>
+
+        <select>
+            <option>Selecione o curso</option>
+            <option>Java</option>
+            <option>C#</option>
+            <option>Front</option>
+            <option>Python</option>
+        </select>
+
+        <textarea placeholder="Mensagem"></textarea>
+
+        <input type="submit">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

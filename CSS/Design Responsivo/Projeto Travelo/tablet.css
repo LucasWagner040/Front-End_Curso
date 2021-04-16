@@ -1,0 +1,89 @@
+/* Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: 14px sans-serif;
+}
+
+/* Topo */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+header select{
+    display: none;
+}
+
+
+/* Grid */
+
+/* Classes de coluna */
+.col-tablet-1{width: 8.33%;}
+.col-tablet-2{width: 16.66%;}
+.col-tablet-3{width: 25%;}
+.col-tablet-4{width: 33.33%;}
+.col-tablet-5{width: 41.66%;}
+.col-tablet-6{width: 50%;}
+.col-tablet-7{width: 58.33%;}
+.col-tablet-8{width: 66.66%;}
+.col-tablet-9{width: 75%;}
+.col-tablet-10{width: 83.33%;}
+.col-tablet-11{width: 91.66%;}
+.col-tablet-12{width: 100%;}
+
+[class*="col-tablet-"]{
+    float: left;
+}
+
+.destinos h1{
+    text-align: center;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.destinos img{
+    width: 96%;
+    margin: 2%;
+}
+
+.borda{
+    border: 1px solid lightseagreen;
+    margin: 2%;
+    border-radius: 5px;
+}
+
+html, body{
+    height: 100%;
+}
+
+.estrutura{
+    min-height: 100%;
+    position: relative;
+}
+
+footer{
+    background-color: #000;
+    bottom: -60px;
+    width: 100%;
+    position: absolute;
+}
+
+footer p{
+    text-align: center;
+    color: wheat;
+    padding: 20px;
+}

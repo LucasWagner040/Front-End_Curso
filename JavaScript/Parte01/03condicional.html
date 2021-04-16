@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampada</title>
+
+    <script>
+
+        function ligar(botao){
+
+            // Condicional
+
+            if(botao.innerHTML == "Ligar"){
+                document.getElementById("lampada").src = "LampadaLigada.webp";
+                document.getElementById("lampada").style = "width:295px";
+                botao.innerHTML = "Desligar";
+            }else{
+                document.getElementById("lampada").src = "LampadaDesligada.webp";
+                document.getElementById("lampada").style = "width:300px";
+                botao.innerHTML = "Ligar";
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <img src="./LampadaDesligada.webp" id="lampada">
+    <button onclick="ligar(this)">Ligar</button>
+    
+</body>
+</html>

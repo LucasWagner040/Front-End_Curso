@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura</title>
+
+    <style>
+        @import url ('https://fonts.googleapis.com/css2? family = DotGothic16 & display = swap');
+
+        p{
+            font-family: sans-serif;
+        }
+
+        p:nth-child(1){
+            color: red;
+            font-family: 'Times New Roman' ;
+        }
+        h1{
+            font-family: 'DotGothic16', sans-serif;
+        }
+
+        h2{
+            /* 
+                1° Horizontal
+                2° Vertical
+                3° Esfumaçado
+                4° Cor
+             */
+            text-shadow: 0px 0px 2px red;
+        }
+
+        h3{
+            border-style: solid;
+            border-width: 3px;
+            border-color: green;
+        }
+
+        h4{
+            background-color: yellow;
+            border: 2px solid green;
+            border-radius: 5px 20px 40px 60px;/* Sentido Horario*/
+            box-shadow: 0px 0px 5px rgb(0, 0, 255) inset; /*Inset = interno*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Paragrafo -->
+    <p>meu primeiro parágrafo</p>
+    <p>meu segundo parágrafo</p>
+
+    <!-- Titulos -->
+    <h1>Titulo Em H1</h1>
+    <h2>Titulo Em H2</h2>
+    <h3>Titulo Em H3</h3>
+    <h4>Titulo Em H4</h4>
+    <h5>Titulo Em H5</h5>
+    <h6>Titulo Em H6</h6>
+
+    <!-- Estilizar texto -->
+    <p>
+        <b>Negrito</b>
+        , 
+        <i>italico</i>
+        , 
+        <u>sublinhado</u>
+        , 
+        <s>cortado</s>
+        , 
+        e 
+        <b><i><u>misto</u></i></b>
+    </p>
+</body>
+</html>

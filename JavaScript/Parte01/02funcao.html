@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        // Função 01
+        function mensagem(){
+            alert("Testando Função")
+        }
+
+        // Função 02
+        function obterElemento(e){
+            console.log(e.innerHTML);
+
+            e.innerHTML = "Você Clicou na Opção!"
+            e.style = "color:blue; background-color:black";
+        }
+
+        // Fundo
+        function fundo(codigo){
+            
+            switch(parseInt(codigo)){
+                case 1:
+                document.getElementsByTagName("body") [0].style = "background-color:blue";
+                break;
+
+                case 2:
+                document.getElementsByTagName("body") [0].style = "background-color:green";
+                break;
+
+                case 3:
+                document.getElementsByTagName("body") [0].style = "background-color:white";
+                break;
+
+                case 4:
+                document.getElementsByTagName("body") [0].style = "background-color:red";
+                break;
+            }
+
+        }
+
+        function teclado(valor){
+            document.getElementsByTagName("p") [0].innerHTML = valor;
+            document.getElementsByTagName("p") [0].style = "color:blue; font-size:30px";
+        }
+        
+    </script>
+</head>
+<body>
+
+    <button onclick="mensagem()">Clique aqui</button>
+
+    <h1 onclick="obterElemento(this)">Bom Dia!!! 06/04/2021</h1>
+
+    <h2 onclick="obterElemento(this)">Boa Tarde!!!</h2>
+
+    <h3 onclick="obterElemento(this)">Boa Noite!!!</h3>
+
+    <select onchange="fundo(this.value)">
+        <option value="0">EScolha uma cor</option>
+        <option value="1">Azul</option>
+        <option value="2">Verde</option>
+        <option value="3">Branco</option>
+        <option value="4">Vermelho</option>
+    </select>
+
+    <p></p>
+
+    <input type="text" onkeyup="teclado(this.value)">
+
+</body>
+</html>

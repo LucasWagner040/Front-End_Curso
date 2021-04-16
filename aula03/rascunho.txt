@@ -1,0 +1,23 @@
+criarodr da pasta {}package.json {
+
+    npm init -f
+}
+
+clear no node {
+
+    cls
+}
+
+intalador de dependencias o node{
+
+    npm install readline-sync --save
+}
+
+Perguntas frenquentes {
+    oque é
+
+    como?
+
+    porque?
+}
+

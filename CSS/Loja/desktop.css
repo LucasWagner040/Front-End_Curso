@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: 14px sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #131921;
+}
+
+header h1{
+    font-size: 350%;
+    color: white;
+
+}
+
+header a{
+    display: inline-block;
+    padding: 25px 30px;
+    color: #000;
+    text-decoration: none;
+    color: white;
+}
+
+header select{
+    display: none;
+}
+
+.col-desktop-1{width: 8.33%;}
+.col-desktop-2{width: 16.66%;}
+.col-desktop-3{width: 25%;}
+.col-desktop-4{width: 33.33%;}
+.col-desktop-5{width: 41.66%;}
+.col-desktop-6{width: 50%;}
+.col-desktop-7{width: 58.33%;}
+.col-desktop-8{width: 66.66%;}
+.col-desktop-9{width: 75%;}
+.col-desktop-10{width: 83.33%;}
+.col-desktop-11{width: 91.66%;}
+.col-desktop-12{width: 100%;}
+
+[class*="col-desktop-"]{
+    float: left;
+}
+
+main{
+    width: 90%;
+    margin: 5% 0px 0px 5%;
+    overflow: auto;
+}
+
+main div img{
+    width: 100%;
+}
+
+main div h1{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+main div p{
+    color: #E89128;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.precoNormal{
+    text-decoration: line-through;
+}

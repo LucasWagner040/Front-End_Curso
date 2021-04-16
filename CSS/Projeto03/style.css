@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .carousel-item img{
+        height: 1400px;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:900px) {
+    .carousel-item img{
+        height: 700px;
+    }
+}
+
+@media screen and (max-width:901px) {
+    .carousel-item img{
+        height: 900px;
+    }
+}
+
+.navegacao{
+    z-index: -1;
+    position: relative;
+}
+
+.bg-dark{
+    background: linear-gradient(90deg, rgba(141,16,197,1) 11%, rgba(0,7,147,1) 28%, rgba(19,68,173,1) 69%, rgba(6,172,204,1) 80%) !important;
+}
+
+.nav-link{
+    color: black !important; 
+}
+
+.nav-link:hover{
+    color: rgb(32, 20, 160) !important; 
+}
+
+.logo{
+    width: 10%;
+}
+
+.img-fluid{
+    height: 200px;
+}
+
+.cursos h1{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-bottom: 4px solid brown;
+    padding-bottom: 25px;
+}
+
+.seccaoDeCursos{
+    border: 2px solid black;
+    border-radius: 70px;
+    padding: 5%;
+    margin: 100px 0px 100px 0px;
+}
+
+.cursos img{
+    border-radius: 10px 40px 40px 10px;
+    background-color: white;
+    border: 3px solid brown;
+}
+
+.cursos p{
+    text-align: center;
+}
+
+
+.cursoModal h1{
+    border-bottom: 5px solid brown;
+    border-left: 5px solid brown;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cursoModal img{
+    border-left: 5px solid brown;
+    border-right: 5px solid brown;
+    border-radius: 20px;
+    padding: 3px;
+    background: linear-gradient(90deg, rgba(165,42,42,1) 7%, rgba(0,0,0,1) 51%, rgba(165,42,42,1) 87%);
+}
+
+.textModal{
+    border-left: 3px solid brown;
+    padding-left: 50px;
+}
+
+.professores div.card{
+    border: 3px solid brown;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.professores{
+    border: 2px solid black;
+    border-radius: 70px;
+    padding: 5%;
+    margin-bottom: 100px;
+}
+
+.professores h1{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-bottom: 4px solid brown;
+    padding-bottom: 25px;
+}
+
+.professores img{
+    height: 300px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: 3px solid black;
+}
+
+.professores h4{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+    background-color: black;
+    color: #fff;
+}
+
+.perfilContato{
+    border: 5px solid brown;
+    border-radius: 35px;
+    padding: 3% 3% 3% 3%;
+    margin: 10% 0% 10% 5%;
+}
+
+.perfilContato img{
+    height: 250px;
+}
+
+.perfilContato h1{
+    margin: 5% 0px 5% 0px;
+    padding: 3% 0px 5% 0px;
+    border-bottom: 3px solid brown;
+    border-right: 3px solid brown;
+    box-shadow: 5px 5px 5px brown;
+    border-radius: 20px;
+    width: 350px;
+}
+
+.perfilContato a img{
+    margin: 5% 0px 0px 1%;
+    height: 100px;
+}
+
+.telefone{
+    margin: 0% 0px 0px 1%;
+    padding: 0% 0px 3% 1%;
+    border-bottom: 5px dotted brown;
+    width: 150px;
+}
+
+.email{
+    margin: 3% 0px 0px 1%;
+    padding: 0% 0px 3% 1%;
+    border-bottom: 5px dotted brown;
+    width: 150px;
+}
+
+.perfilContato div p{
+    margin: 0px 0px 0px 10%;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martriz</title>
+
+    <script>
+
+        var cursos = [
+            ["HTML", 800],
+            ["CSS", 1100],
+            ["JavaScript", 1600],
+            ["Java", 1800],
+            ["Python", 900],
+            ["Word Press", 700],
+            ["PHP", 1000]
+        ];
+
+        console.table(cursos);
+
+        var indice = 0;
+
+        do{
+            document.write(cursos[indice] + "<hr>");
+            indice++
+        }while(indice < cursos.length);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

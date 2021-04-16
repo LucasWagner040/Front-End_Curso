@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="mobile.css" media="(max-width: 600px)">
+    <link rel="stylesheet" href="tablet.css" media="(min-width: 601px) and (max-width: 900px)">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 901px)">
+
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+<body>
+
+    <div class="estrutura">
+        
+        <!-- Topo -->
+        <header>
+            <img src="imagens/logo.webp">
+
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Sobre</a>
+                <a href="#">Destinos</a>
+                <a href="#">Blog</a>
+                <a href="#">Contato</a>
+            </nav>
+
+            <select>
+                <option>Menu</option>
+                <option>Início</option>
+                <option>Sobre</option>
+                <option>Destinos</option>
+                <option>Blog</option>
+                <option>Contato</option>
+            </select>
+        </header>
+
+        <!-- Principal -->
+        <main>
+
+            <!-- Banner -->
+            <section class="fotorama" data-loop="value">
+                <img src="imagens/banner/1.webp">
+                <img src="imagens/banner/2.webp">
+                <img src="imagens/banner/3.webp">
+            </section>
+
+            <!-- Destinos -->
+
+            <section class="destinos">
+
+                <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                    <div class="borda">
+                        <img src="./imagens/destinos/1.webp">
+                        <h1>São francisco</h1>
+                    </div>
+                </div>
+
+                <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                    <div class="borda">
+                        <img src="./imagens/destinos/2.webp">
+                        <h1>Fili</h1>
+                    </div>
+                </div>
+
+                <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                    <div class="borda">
+                        <img src="./imagens/destinos/3.webp">
+                        <h1>Londres</h1>
+                    </div>
+                </div>
+
+                <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                    <div class="borda">
+                        <img src="./imagens/destinos/4.webp">
+                        <h1>Filipinas</h1>
+                    </div>
+                </div>
+
+                <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                    <div class="borda">
+                        <img src="./imagens/destinos/5.webp">
+                        <h1>Grécia</h1>
+                    </div>
+                </div>
+
+                <div class="col-desktop-4 col-tablet-6 col-mobile-12">
+                    <div class="borda">
+                        <img src="./imagens/destinos/6.webp">
+                        <h1>Bahamas</h1>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Desenvolvido Por Lucas Wagner - 2021</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

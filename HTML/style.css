@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.sobrenavbar{
+    padding: 10px;
+    width: 80%;
+    margin:0 10% 0 10%;
+    font-size: 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 20px;
+}
+.globo{
+    color: blue;
+}
+
+.g1{
+    color: rgb(167, 0, 0);
+}
+
+.ge{
+    color: rgb(0, 99, 0);
+}
+
+.gshow{
+    color: orange;
+}
+
+.g1{
+    color: blue;
+}
+
+.navbar{
+    color: white;
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+    font-size: 20px;
+}
+
+div{
+    width: 32.93%;
+    display: inline-block;
+    text-align: center;
+}
+
+.titulo nav h1{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    margin:0 0 4% 0;
+}
+
+.links{
+    margin-right: 50px;
+    width: 50px;
+    float: left;
+    margin:5% 10% 0 30%;
+}
+
+.pesquisa{
+    margin: 5px;
+    width: 50px;
+    float: right;
+    margin:5% 30% 0 10%;
+}
+
+.categoria{
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.propaganda{
+    background-color: lightsteelblue;
+    width: 20%;
+    height: 250px;
+    margin: 40px 40% 15px 40%;
+}
+
+.banner{
+    background-color: lightgray;
+    height: 400px;
+}
+
+.social{
+    width: 500px;
+}
+
+.facebook{
+    font-size: 30px;
+    background-color: #3652ee;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 7px;
+    float: left;
+    height: 40px;
+}
+
+.imagenface{
+    height: 40px;
+    margin-bottom: -10px;
+}
+
+.imagentwitter{
+    background-color: #029BE8;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 7px;
+    float: left;
+    height: 40px;
+}
+
+.imagengoogle{
+    background-color: #ff6600;
+    width: 40px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 7px;
+    float: left;
+}
+
+.descricao div{
+    overflow: auto;
+    margin-top: 100px;
+}
+
+.dual div:first-child{
+    background-color: white;
+    width: 550px;
+    height: 2000px;
+    margin-left: 9%;
+    float: left;
+}
+
+.dual div:last-child{
+    width: 550px;
+    height: 1700px;
+    margin-right: 9%;
+    float: right;
+}
+
+footer div{
+    color: white;
+    background-color: #333333;
+    width: 100%;
+    height: 100px;
+}
+
+ul{
+    list-style: none;
+}
+
+.propagandaesquerda{
+    width: 300px;
+    height: 300px;
+    margin: 5px 25% 0 25%;
+    background-color: rgb(95, 218, 95);
+}
+
+.emplementodireito{
+    background-color: lightskyblue;
+    width: 100%;
+    height: 500px;
+    margin: 20px 25% 20px 0;
+}
+
+.direita h1{
+    width: 30%;
+    color: black;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.descricaotexto{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 15%;
+    font-size: 20.5px;
+}
+
+.anuncio{
+    margin: 10px 0 10px 0;
+}
+
+.imagenanuncio{
+    background-color: rgb(131, 96, 96);
+    width: 50%;
+    margin: 30px 0 100px 9%;
+    float: left;
+    height: 150px;
+}
+
+.descricaoanuncio{
+    background-color: rgb(22, 12, 130);
+    width: 50%;
+    float: right;
+    margin: 30px -9% 0 0;
+    height: 250px;
+}

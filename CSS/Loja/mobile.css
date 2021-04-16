@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: 14px sans-serif;
+}
+
+/* Topo */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #131921;
+}
+
+header a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+header select{
+    display: none;
+}
+
+
+.col-mobile-1{width: 8.33%;}
+.col-mobile-2{width: 16.66%;}
+.col-mobile-3{width: 25%;}
+.col-mobile-4{width: 33.33%;}
+.col-mobile-5{width: 41.66%;}
+.col-mobile-6{width: 50%;}
+.col-mobile-7{width: 58.33%;}
+.col-mobile-8{width: 66.66%;}
+.col-mobile-9{width: 75%;}
+.col-mobile-10{width: 83.33%;}
+.col-mobile-11{width: 91.66%;}
+.col-mobile-12{width: 100%;}
+
+[class*="col-mobile-"]{
+    float: left;
+}
+
+main{
+    width: 90%;
+    margin: 5% 0px 0px 5%;
+    overflow: auto;
+}
+
+main div img{
+    width: 100%;
+}
+
+main div h1{
+    font-size: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-family: 'Merriweather', serif;
+}
+
+main div p{
+    color: #E89128;
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.precoNormal{
+    text-decoration: line-through;
+}

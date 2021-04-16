@@ -1,0 +1,6 @@
+    o que?
+    como?
+    Porque?
+
+    npm install readline --save
+    (peck de dependencias node)

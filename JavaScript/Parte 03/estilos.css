@@ -1,0 +1,26 @@
+.container{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    width: 60%;
+}
+
+form{
+    width: 90%;
+    margin: 5% auto;
+    text-align: center;
+}
+
+input{
+    margin-top: 10px;
+}
+
+#botao_alterar,
+#botao_excluir,
+#botao_cancelar{
+    display: none;
+}
+
+.table{
+    margin: 5% auto;
+    width: 90%;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço</title>
+    <script>
+
+        function calcular(){
+
+            //Obter elemento HTML 
+            var tabuada = document.getElementById("tabuada");
+            var valor = document.getElementById("valor").value;
+
+            if(valor == ""){
+                alert("Informe um valor:");
+            }else{
+                // Ìndice
+                var indice = 0;
+
+                // Limpar o Id Tabuada
+                tabuada.innerHTML = "";
+
+                // Laço
+                while(indice < 11){
+                    tabuada.innerHTML += valor + " X " + indice + " = " + (valor * indice) + "<br>"
+                    document.getElementById("tabuada").style = "color:blue;"
+                    indice++;
+                }
+            }
+        }
+
+        function teclado(event){
+            if(event.keyCode == 13){
+                calcular();
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+    <h1 id="tabuada"></h1>
+
+    <input type="number" id="valor" placeholder="Informe um Número" onkeyup="teclado(event)">
+
+    <button onclick="calcular()">Calular</button>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: 14px sans-serif;
+}
+
+/* Topo */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+header img{
+    width: 40%;
+}
+
+header a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+header nav{
+    display: none;
+}
+
+header select{
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* Grid */
+
+/* Classes de coluna */
+.col-mobile-1{width: 8.33%;}
+.col-mobile-2{width: 16.66%;}
+.col-mobile-3{width: 25%;}
+.col-mobile-4{width: 33.33%;}
+.col-mobile-5{width: 41.66%;}
+.col-mobile-6{width: 50%;}
+.col-mobile-7{width: 58.33%;}
+.col-mobile-8{width: 66.66%;}
+.col-mobile-9{width: 75%;}
+.col-mobile-10{width: 83.33%;}
+.col-mobile-11{width: 91.66%;}
+.col-mobile-12{width: 100%;}
+[class*="col-mobile-"]{
+    float: left;
+}
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.destinos img{
+    width: 96%;
+    margin: 2%;
+}
+
+.borda{
+    border: 1px solid lightseagreen;
+    margin: 2%;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #000;
+    padding: 10%;
+    margin-top: 5%;
+
+}
+
+footer p{
+    text-align: center;
+    color: wheat;
+}

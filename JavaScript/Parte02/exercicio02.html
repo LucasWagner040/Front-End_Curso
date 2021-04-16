@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Exercicio 02</title>
+
+    <script>
+
+        function calculo(){
+
+            var n1 = document.getElementById("n1")
+            var n2 = document.getElementById("n2")
+            var n3 = document.getElementById("n3")
+            var menorNumero = document.getElementById("menorNumero")
+
+            if(n1.value < n2.value && n1.value < n3.value){
+                menorNumero.innerHTML = `O Menor Número é ${n1.value}`;
+            }else if(n2.value < n1.value && n2.value < n3.value){
+                menorNumero.innerHTML = `O Menor Número é ${n2.value}`;
+            }else{
+                menorNumero.innerHTML = `O Menor Número é ${n3.value}`;
+            }
+
+            return false
+        }
+
+    </script>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header{
+            margin: 10px auto;
+            width: 40%;
+            padding: 20px 0 10px 0;
+            text-align: center;
+        }
+
+        form{
+            margin: 10px auto;
+            width: 40%;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        input{
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Menor Número:</h1>
+    </header>
+    <form onsubmit="return calculo()">
+        <input class="form-control" type="number" placeholder="Digite O Primeiro Número:" id="n1">
+        <input class="form-control" type="number" placeholder="Digite O Segundo Número:" id="n2">
+        <input class="form-control" type="number" placeholder="Digite O Terceiro Número:" id="n3">
+        <input class="btn btn-primary" type="submit" value="VERIFICAR">
+        <div id="menorNumero"></div>
+    </form>
+</body> 
+</html>
