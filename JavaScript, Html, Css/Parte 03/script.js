@@ -8,7 +8,7 @@ function vetorLocal(){
     localStorage.setItem("dados", JSON.stringify(clientes));
 }
 
-// Verifica sae há JSON no LocalStorage
+// Verifica se há JSON no LocalStorage
 window.onload = function(){
     if(localStorage.getItem("dados") != null){
         clientes = JSON.parse(localStorage.getItem("dados"))
