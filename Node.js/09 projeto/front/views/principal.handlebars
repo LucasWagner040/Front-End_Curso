@@ -1,0 +1,24 @@
+<form action="/cadastrar" method="POST">
+    <input type="text" placeholder="Nome" name="nome">
+    <input type="number" placeholder="Idade" name="idade">
+    <input type="submit" placeholder="Cadastrar">
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Nome</td>
+            <td>Idade</td>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each vetor}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{nome}}</td>
+            <td>{{idade}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
