@@ -1,0 +1,19 @@
+{
+  "cursos": [
+    {
+      "nome": "JavaScript",
+      "valor": 900,
+      "id": 2
+    },
+    {
+      "nome": "Node.js",
+      "valor": 850,
+      "id": 3
+    },
+    {
+      "nome": "CSS",
+      "valor": 700,
+      "id": 4
+    }
+  ]
+}
