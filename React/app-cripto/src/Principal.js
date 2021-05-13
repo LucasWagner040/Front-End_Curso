@@ -2,7 +2,7 @@ import React from 'react';
 
 // Importar imagens
 import bitcoin from './Imagens/bitcoin.png'
-import litcoin from './Imagens/litcoin.png'
+import litcoin from './Imagens/litecoin.png'
 import eth from './Imagens/eth.png'
 import xrp from './Imagens/xrp.png'
 import bch from './Imagens/bch.png'

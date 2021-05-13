@@ -1,4 +1,4 @@
-img{
+.col-4 img{
     width: 20%;
     margin: 5%;
 }
@@ -12,5 +12,19 @@ p{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.cripto{
+    width: 60%;
+    height: 50%;
+    background-color: lightgrey;
+}
+.imgcripto{
+    display: flex;
+    justify-content: center;
+}
+.imgcripto img{
+    width: 20%;
+    margin: 30px;
 }
 
