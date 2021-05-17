@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './Principal.css'
+import fotocriptomoedas from './Imagens/criptomoedasJuntas.png'
 
 export default class Topo extends React.Component{
     render(){
@@ -8,7 +9,7 @@ export default class Topo extends React.Component{
             <div>
                 <header>
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <img className="imagenCripto" src="https://img.icons8.com/fluent/64/000000/bitcoin.png" />
+                        <img className="imagenCripto" src={fotocriptomoedas} />
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">

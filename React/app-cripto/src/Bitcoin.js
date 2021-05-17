@@ -30,7 +30,7 @@ export default class Bitcoin extends React.Component {
             .then(retorno => retorno.json())
             .then(retorno => this.setState({ datebitcoin: retorno.ticker.date }));
 
-        },5000)
+        },2000)
     }
 
     // componentDidMount(){
@@ -68,27 +68,27 @@ export default class Bitcoin extends React.Component {
                             <img src={bitcoin} />
                         </div>
                         <div>
+                            <p>Menor preço de oferta de venda das últimas 24 horas.</p>
+                            <p className="paragrafo2">R$ {Number(this.state.sellbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
 
                             <p>Maior preço unitário de negociação das últimas 24 horas.</p>
-                            <p>R$ {Number(this.state.highbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
+                            <p className="paragrafo2">R$ {Number(this.state.highbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
 
                             <p>Menor preço unitário de negociação das últimas 24 horas.</p>
-                            <p>R$ {Number(this.state.lowbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
+                            <p className="paragrafo2">R$ {Number(this.state.lowbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
 
                             <p>Quantidade negociada nas últimas 24 horas.</p>
-                            <p> {Number(this.state.volbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
+                            <p className="paragrafo1"> {Number(this.state.volbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
 
                             <p>Preço unitário da última negociação.</p>
-                            <p>R$ {Number(this.state.lastbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
+                            <p className="paragrafo2">R$ {Number(this.state.lastbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
 
                             <p>Maior preço de oferta de compra das últimas 24 horas.</p>
-                            <p>R$ {Number(this.state.buybitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
+                            <p className="paragrafo2">R$ {Number(this.state.buybitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
 
-                            <p>Menor preço de oferta de venda das últimas 24 horas.</p>
-                            <p>R$ {Number(this.state.sellbitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
 
                             <p>Data e hora da informação em Era Unix </p>
-                            <p>R$ {Number(this.state.datebitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
+                            <p className="paragrafo3">R$ {Number(this.state.datebitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
 
                         </div>
                     </div>

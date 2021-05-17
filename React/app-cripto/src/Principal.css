@@ -1,6 +1,32 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+    animation: animacao 0.5s ease-in-out  alternate;
+}
+
+@keyframes animacao {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+  }
+
 .col-4 img{
     width: 20%;
     margin: 5%;
+}
+
+.navbar-light{
+    background-color: white !important;
 }
 
 p{
@@ -17,14 +43,43 @@ p{
 .cripto{
     width: 60%;
     height: 50%;
-    background-color: lightgrey;
+    text-align: center;
 }
+
 .imgcripto{
     display: flex;
     justify-content: center;
 }
 .imgcripto img{
     width: 20%;
-    margin: 30px;
+    margin: 20px;
 }
 
+.imagenCripto{
+    width: 15%;
+    margin: 10px;
+}
+
+.paragrafo3,
+.paragrafo2,
+.paragrafo1{
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paragrafo3{
+    width: 220px;
+}
+
+.paragrafo2{
+    width: 150px;
+}
+
+.paragrafo1{
+    width: 150px;
+}

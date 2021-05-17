@@ -24,6 +24,8 @@ export default class Principal extends React.Component {
     // }, 10000);
 
     componentDidMount() {
+
+        setInterval(()=>{
         fetch('https://www.mercadobitcoin.net/api/BTC/ticker/')
             .then(retorno => retorno.json())
             .then(retorno => this.setState({ bitcoin: retorno.ticker.sell }));
@@ -47,6 +49,7 @@ export default class Principal extends React.Component {
         fetch('https://www.mercadobitcoin.net/api/chz/ticker/')
             .then(retorno => retorno.json())
             .then(retorno => this.setState({ chz: retorno.ticker.sell }));
+        }, 2000)
     }
 
     constructor(props) {
@@ -70,34 +73,34 @@ export default class Principal extends React.Component {
         return (
             <body class='container container-fluid'>
                 <div className='row'>
-                    <div className='col-4'>
+                    <a href="./bitcoin" className='col-4'>
                         <img src={bitcoin} />
                         <p>R$ {Number(this.state.bitcoin).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
-                    </div>
-                    <div className='col-4'>
+                    </a>
+                    <a href="./litecoin" className='col-4'>
                         <img src={litcoin} />
                         <p>R$ {Number(this.state.ltc).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
-                    </div>
-                    <div className='col-4'>
+                    </a>
+                    <a href="./etheriun" className='col-4'>
                         <img src={eth} />
                         <p>R$ {Number(this.state.eth).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
-                    </div>
-                    <div className='col-4'>
+                    </a>
+                    <a href="./ripple" className='col-4'>
                         <img src={xrp} />
                         <p>R$ {Number(this.state.xrp).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
-                    </div>
-                    <div className='col-4'>
+                    </a>
+                    <a href="./bitcoincash" className='col-4'>
                         <img src={bch} />
                         <p>R$ {Number(this.state.bch).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
-                    </div>
-                    <div className='col-4'>
+                    </a>
+                    <a href="./dolar" className='col-4'>
                         <img src={uscd} />
                         <p>R$ {Number(this.state.uscd).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
-                    </div>
-                    <div className='col-4'>
+                    </a>
+                    <a href="./chiliz" className='col-4'>
                         <img src={Chiliz} />
                         <p>R$ {Number(this.state.chz).toFixed(2).replace('.', ',').replace(/(\d)(?=(\d{3})+\,)/g, "$1.")}</p>
-                    </div>
+                    </a>
 
                 </div>
             </body>
