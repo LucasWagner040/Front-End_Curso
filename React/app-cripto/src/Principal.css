@@ -6,7 +6,6 @@ a{
 a:hover{
     text-decoration: none;
     color: black;
-    animation: animacao 0.5s ease-in-out  alternate;
 }
 
 @keyframes animacao {
@@ -14,20 +13,32 @@ a:hover{
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
     }
-    100% {
-        transform: scale(1.1);
-        -webkit-transform: scale(1.1);
+    50%{
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
     }
-  }
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+.navbar-light{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 17%, rgba(0,0,0,1) 33%, rgb(87, 87, 87) 61%, rgb(255, 255, 255) 100%);
+}
+
+.nav-link{
+    color: black !important;
+}
 
 .col-4 img{
     width: 20%;
     margin: 5%;
 }
-
+/* 
 .navbar-light{
-    background-color: white !important;
-}
+    background-color: black !important;
+} */
 
 p{
     font-size: 20px;
@@ -38,6 +49,10 @@ p{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.col-4:hover{
+    animation: animacao 0.5s ease-in-out  alternate;
 }
 
 .cripto{

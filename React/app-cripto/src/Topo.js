@@ -1,15 +1,13 @@
 import React from 'react'
 
 import './Principal.css'
-import fotocriptomoedas from './Imagens/criptomoedasJuntas.png'
 
 export default class Topo extends React.Component{
     render(){
         return(
             <div>
-                <header>
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <img className="imagenCripto" src={fotocriptomoedas} />
+                <header className='topo'>
+                    <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
