@@ -23,7 +23,7 @@ export class Pg1Component implements OnInit {
   cadastrar = () => {
     this.dados.push(this.pessoa);
 
-    console.log(this.dados)
+    this.pessoa = new pessoa();
   }
 
   ngOnInit(): void {
