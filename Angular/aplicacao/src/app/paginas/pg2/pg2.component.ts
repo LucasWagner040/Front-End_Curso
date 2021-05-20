@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from 'src/app/modelo/Post';
+import { PostService } from 'src/app/servicos/post.service';
 
 @Component({
   selector: 'app-pg2',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pg2Component implements OnInit {
 
-  constructor() { }
+  constructor(private servico: PostService) { }
+
+  vetor: Post[] = [];
 
   ngOnInit(): void {
+
+    this.servico.obterPosts()
+    .subscribe((postagens) => {
+      this.vetor = postagens;
+    })
+
   }
 
 }

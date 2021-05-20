@@ -3,3 +3,23 @@
     <input [(ngModel)]="pessoa.cidade" name='cidade' type="text" placeholder="Cidade" class="form-control">
     <input type="button"(click)="cadastrar()" value="Cadastrar" class="btn btn-primary">
 </form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>Remover</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let d of dados; index as i">
+            <th>{{i+1}}</th>
+            <th>{{d.nome}}</th>
+            <th>{{d.cidade}}</th>
+            <th><button (click)="remover(i)" class="btn btn-danger">Remover</button></th>
+        </tr>
+    </tbody>
+</table>

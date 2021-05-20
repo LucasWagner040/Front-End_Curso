@@ -11,10 +11,7 @@ export class Pg1Component implements OnInit {
   constructor() { }
 
   // objeto
-  pessoa = {
-    nome  : '',
-    cidade : ''
-  }
+  pessoa = new pessoa();
 
   // json
   dados: pessoa[] = [];
@@ -24,9 +21,29 @@ export class Pg1Component implements OnInit {
     this.dados.push(this.pessoa);
 
     this.pessoa = new pessoa();
+
+    this.addLocalStorage();
+  }
+
+  // evento para remover
+  remover = (codigo: number) => {
+    this.dados.splice(codigo, 1)
+  }
+
+  // adicionar ao local storage
+  addLocalStorage = () => {
+    localStorage.setItem('dados', JSON.stringify(this.dados))
+  }
+
+  // verificar o localstorage
+  verificarLocalStorage = () => {
+    if(localStorage.getItem('dados') != null){
+      console.log(localStorage.getItem('dados') || '{}');
+    }
   }
 
   ngOnInit(): void {
+    this.verificarLocalStorage();
   }
 
 }

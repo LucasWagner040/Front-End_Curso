@@ -1,1 +1,19 @@
-<p>pg2 works!</p>
+<table class="table table-triped table-dark">
+    <thead>
+        <tr>
+            <th>Id do Usuario</th>
+            <th>Id da postagen</th>
+            <th> Titulo</th>
+            <th> Postagen</th>
+        </tr>
+    </thead>   
+
+    <tbody>
+        <tr *ngFor="let v of vetor">
+            <td>{{v.userId}}</td>
+            <td>{{v.id}}</td>
+            <td>{{v.title}}</td>
+            <td>{{v.body}}</td>
+        </tr>
+    </tbody>
+</table>
