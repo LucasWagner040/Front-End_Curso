@@ -45,6 +45,7 @@ header a{
     padding: 20px;
     color: #000;
     text-decoration: none;
+    border: 1px solid transparent;
 }
 
 header a:hover{
@@ -52,7 +53,7 @@ header a:hover{
     text-decoration: underline rgb(11, 192, 108);
     background-color: rgba(123, 255, 0, 0.349);
     border: 1px solid rgb(18, 90, 0);
-    padding: 19px;
+    padding: 19px 19px 19px 21px;
     border-radius: 15px;
 }
 
